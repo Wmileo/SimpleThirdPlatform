@@ -15,6 +15,10 @@
 		CEE544391D19130F001BD571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE544371D19130F001BD571 /* LaunchScreen.storyboard */; };
 		CEE544441D19130F001BD571 /* SimpleThirdPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE544431D19130F001BD571 /* SimpleThirdPlatformTests.m */; };
 		CEE5444F1D19130F001BD571 /* SimpleThirdPlatformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5444E1D19130F001BD571 /* SimpleThirdPlatformUITests.m */; };
+		CEE5446D1D192619001BD571 /* ShareCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5446A1D192619001BD571 /* ShareCenter.m */; };
+		CEE5446E1D192619001BD571 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5446C1D192619001BD571 /* ShareModel.m */; };
+		CEE544711D19263D001BD571 /* PlatformCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE544701D19263D001BD571 /* PlatformCenter.m */; };
+		CEE544741D1935CB001BD571 /* PayCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE544731D1935CB001BD571 /* PayCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		CEE5444A1D19130F001BD571 /* SimpleThirdPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleThirdPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE5444E1D19130F001BD571 /* SimpleThirdPlatformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleThirdPlatformUITests.m; sourceTree = "<group>"; };
 		CEE544501D19130F001BD571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE544691D192619001BD571 /* ShareCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCenter.h; sourceTree = "<group>"; };
+		CEE5446A1D192619001BD571 /* ShareCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCenter.m; sourceTree = "<group>"; };
+		CEE5446B1D192619001BD571 /* ShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
+		CEE5446C1D192619001BD571 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
+		CEE5446F1D19263D001BD571 /* PlatformCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformCenter.h; sourceTree = "<group>"; };
+		CEE544701D19263D001BD571 /* PlatformCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformCenter.m; sourceTree = "<group>"; };
+		CEE544721D1935CB001BD571 /* PayCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayCenter.h; sourceTree = "<group>"; };
+		CEE544731D1935CB001BD571 /* PayCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,8 @@
 				CEE5442D1D19130F001BD571 /* AppDelegate.m */,
 				CEE5442F1D19130F001BD571 /* ViewController.h */,
 				CEE544301D19130F001BD571 /* ViewController.m */,
+				CEE544681D192599001BD571 /* Centers */,
+				CEE5445D1D191EE9001BD571 /* Share */,
 				CEE544321D19130F001BD571 /* Main.storyboard */,
 				CEE544351D19130F001BD571 /* Assets.xcassets */,
 				CEE544371D19130F001BD571 /* LaunchScreen.storyboard */,
@@ -138,6 +152,28 @@
 				CEE544501D19130F001BD571 /* Info.plist */,
 			);
 			path = SimpleThirdPlatformUITests;
+			sourceTree = "<group>";
+		};
+		CEE5445D1D191EE9001BD571 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		CEE544681D192599001BD571 /* Centers */ = {
+			isa = PBXGroup;
+			children = (
+				CEE5446F1D19263D001BD571 /* PlatformCenter.h */,
+				CEE544701D19263D001BD571 /* PlatformCenter.m */,
+				CEE544691D192619001BD571 /* ShareCenter.h */,
+				CEE5446A1D192619001BD571 /* ShareCenter.m */,
+				CEE5446B1D192619001BD571 /* ShareModel.h */,
+				CEE5446C1D192619001BD571 /* ShareModel.m */,
+				CEE544721D1935CB001BD571 /* PayCenter.h */,
+				CEE544731D1935CB001BD571 /* PayCenter.m */,
+			);
+			path = Centers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE5446D1D192619001BD571 /* ShareCenter.m in Sources */,
 				CEE544311D19130F001BD571 /* ViewController.m in Sources */,
 				CEE5442E1D19130F001BD571 /* AppDelegate.m in Sources */,
+				CEE544711D19263D001BD571 /* PlatformCenter.m in Sources */,
+				CEE5446E1D192619001BD571 /* ShareModel.m in Sources */,
 				CEE5442B1D19130F001BD571 /* main.m in Sources */,
+				CEE544741D1935CB001BD571 /* PayCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +536,7 @@
 				CEE544551D19130F001BD571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE544561D19130F001BD571 /* Build configuration list for PBXNativeTarget "SimpleThirdPlatformTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +545,7 @@
 				CEE544581D19130F001BD571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE544591D19130F001BD571 /* Build configuration list for PBXNativeTarget "SimpleThirdPlatformUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +554,7 @@
 				CEE5445B1D19130F001BD571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
